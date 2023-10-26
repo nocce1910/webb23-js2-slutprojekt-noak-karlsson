@@ -1,0 +1,32 @@
+/* Navbar styling */
+.navbar {
+    background-color: #001f3f; /* Mörkblå bakgrundsfärg */
+    color: #7FDBFF; /* Himmelsblå textfärg */
+    padding: 40px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    margin: 0 15px;
+  }
+  
+  /* Länkstil */
+  a {
+    text-decoration: none;
+    color: #7FDBFF; /* Himmelsblå textfärg */
+    font-weight: bold;
+    font-size: 40px;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #ffffff; /* Mörkare blå färg vid hovring */
+  }
+  

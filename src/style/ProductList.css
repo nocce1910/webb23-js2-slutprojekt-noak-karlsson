@@ -1,0 +1,118 @@
+/* ProductList styling */
+.product-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.search input {
+  flex: 1;
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.search button {
+  background-color: #7FDBFF;
+  color: #001f3f;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search button:hover {
+  background-color: #0074D9;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.product {
+  background-color: #001f3f;
+  color: #fff;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: calc(48% - 20px); /* Anpassat bredden så att det är två produkter per rad med marginal */
+  text-align: center;
+}
+
+.product img {
+  width: 500px; /* Ändrat bredden till 100% för att anpassa bilden efter förälderelementets bredd */
+  height: 500px; /* Säkerställer att höjden justeras automatiskt för att behålla proportionsförhållandet */
+  margin: 10px 0;
+  object-fit: cover;
+}
+
+.product h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.product p {
+  font-size: 16px;
+}
+
+.product button {
+  background-color: #7FDBFF;
+  color: #001f3f;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.product button:disabled {
+  background-color: #ccc; /* Grayed-out background */
+  color: #999; /* Grayed-out text color */
+  cursor: not-allowed; /* Change cursor to 'not allowed' */
+}
+.product button:hover {
+  background-color: #0074D9;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.controls input {
+  flex: 1;
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.controls button {
+  background-color: #7FDBFF;
+  color: #001f3f;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.controls button:hover {
+  background-color: #0074D9;
+}
